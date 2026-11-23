@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agents IA · Sari-Concept, agence de l'Orne</title>
+<meta name="description" content="Des agents IA qui prennent en charge la paperasse technique de l'atelier : devis, études électriques, schémas, comptes rendus, visuels de projet. Et des formations applicatives à l'IA pour vos équipes.">
+<meta property="og:title" content="Agents IA · Sari-Concept, agence de l'Orne">
+<meta property="og:description" content="Des agents IA au service de l'atelier, pas à sa place.">
+<link rel="icon" href="favicon-64.png">
+<style>
+:root{--bg:#0a1422;--bg2:#0f1d31;--bg3:#162844;--txt:#f5f5f0;--mut:#9aa7bb;--line:#1f3354;--or:#ffc62e;--vert:#36c08a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:'Inter','Segoe UI',system-ui,Arial,sans-serif;font-size:16px;line-height:1.6}
+a{color:var(--or)}
+.l{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,#12233b,#0a1422);border-bottom:4px solid var(--or)}
+header .l{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+header img{height:46px;width:auto;display:block}
+header .site{font-size:13px;color:var(--mut);text-decoration:none}
+header .site:hover{color:var(--or)}
+.hero{padding:56px 0 40px}
+.pastille{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--or);background:rgba(255,198,46,.12);border:1px solid rgba(255,198,46,.35);border-radius:999px;padding:4px 12px;margin-bottom:18px}
+h1{font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(28px,5vw,44px);line-height:1.15;font-weight:700;max-width:760px}
+h1 em{font-style:normal;color:var(--or)}
+.hero p{color:#c9d3e2;font-size:18px;max-width:720px;margin-top:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 20px;font-weight:700;font-size:15px;text-decoration:none}
+.btn.or{background:var(--or);color:#0a1422}
+.btn.or:hover{background:#ffd24f}
+.btn.ligne{border:1px solid var(--line);color:var(--txt);background:var(--bg2)}
+.btn.ligne:hover{border-color:var(--or)}
+section{padding:40px 0}
+h2{font-family:'Space Grotesk','Inter',sans-serif;font-size:clamp(22px,3.4vw,30px);line-height:1.25;margin-bottom:8px}
+.intro{color:var(--mut);max-width:720px;margin-bottom:24px}
+.cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
+.carte{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:20px}
+.carte h3{font-size:17px;margin:10px 0 6px;line-height:1.3}
+.carte p{color:#c2ccda;font-size:15px}
+.carte.large{grid-column:1/-1;display:flex;gap:16px;align-items:flex-start;border-color:rgba(255,198,46,.5);background:linear-gradient(135deg,#13243c,#0f1d31)}
+.carte.large h3{margin-top:2px}
+.carte.large .ico{flex-shrink:0}
+.ico{width:40px;height:40px;border-radius:11px;background:var(--bg3);color:var(--or);display:flex;align-items:center;justify-content:center}
+.ico svg{width:22px;height:22px}
+.etat{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px}
+.etat.service{color:var(--vert);background:rgba(54,192,138,.12);border:1px solid rgba(54,192,138,.35)}
+.etat.essai{color:var(--or);background:rgba(255,198,46,.10);border:1px solid rgba(255,198,46,.30)}
+.etapes{counter-reset:e;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+.etape{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:20px;counter-increment:e}
+.etape::before{content:counter(e,decimal-leading-zero);display:block;font-family:'Space Grotesk','Inter',sans-serif;font-size:26px;font-weight:700;color:var(--or);margin-bottom:6px}
+.etape p{color:#c2ccda;font-size:15px}
+.regle{border-left:4px solid var(--or);background:var(--bg2);padding:20px 22px;max-width:820px}
+.regle p{color:#d6dde8}
+.regle p+p{margin-top:10px}
+.contact{background:var(--bg2);border:1px solid var(--line);border-top:4px solid var(--or);border-radius:16px;padding:26px;display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between}
+.contact .qui b{font-size:19px;display:block}
+.contact .qui span{color:var(--mut);font-size:15px}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:22px 0 30px;color:var(--mut);font-size:13px}
+footer p+p{margin-top:6px}
+@media(max-width:560px){.hero{padding:36px 0 24px}.hero p{font-size:16px}section{padding:28px 0}header img{height:38px}}
+.exemple{background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:18px}
+.exemple figcaption{padding:16px 18px 18px;color:#c2ccda;font-size:15px}
+.exemple figcaption b{color:var(--txt)}
+.cadre16{position:relative;aspect-ratio:16/9;max-height:640px;width:100%;background:#0d1a2c}
+.cadre16.ihm16{aspect-ratio:1312/962;max-height:none}
+.cadre16 iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.lancer{position:absolute;inset:0;width:100%;border:0;cursor:pointer;color:var(--txt);font-family:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:radial-gradient(ellipse at center,#1d3557 0%,#0d1a2c 70%)}
+.lancer .rond{width:72px;height:72px;border-radius:50%;background:var(--or);color:#0a1422;display:flex;align-items:center;justify-content:center;font-size:28px;padding-left:6px}
+.lancer b{font-size:19px}.lancer small{color:var(--mut);font-size:13px;padding:0 16px;text-align:center}
+.lancer:hover .rond{background:#ffd24f}
+.plein{font-size:13px;font-weight:700;margin-left:8px;white-space:nowrap}
+@media(max-width:560px){.cadre16{aspect-ratio:auto;height:62vw;min-height:220px}.cadre16.ihm16{aspect-ratio:1312/962;height:auto;min-height:0}}
+</style>
+</head>
+<body>
+<header><div class="l">
+  <a href="https://www.sari-concept.fr/"><img src="logo_sari_transparent.png" alt="Sari-Concept"></a>
+  <a class="site" href="https://www.sari-concept.fr/">www.sari-concept.fr</a>
+</div></header>
+
+<main>
+<div class="l hero">
+  <span class="pastille">Agence de l'Orne · Agents IA</span>
+  <h1>Des agents IA qui travaillent <em>pour</em> l'atelier, pas à sa place.</h1>
+  <p>Nous concevons des agents IA, construits avec Claude, qui prennent en charge la partie «&nbsp;papier&nbsp;» du métier : devis, études électriques, schémas, comptes rendus, classement, et les visuels qui servent à présenter un projet au client. Le technicien garde la main&nbsp;: rien ne part sans sa validation. Et nous formons vos équipes à s'en servir.</p>
+  <div class="cta">
+    <a class="btn or" href="mailto:cviel@sari-concept.fr?subject=Agents%20IA%20%3A%20j%27aimerais%20en%20savoir%20plus">En parler avec Christophe</a>
+    <a class="btn ligne" href="tel:+33677078120">06 77 07 81 20</a>
+  </div>
+</div>
+
+<section><div class="l">
+  <h2>Ce qu'ils font déjà chez nous</h2>
+  <p class="intro">Avant de le proposer à nos clients, nous l'utilisons tous les jours. Chaque agent a un rôle précis, et ses résultats sont relus avant de servir.</p>
+  <div class="cartes">
+    <div class="carte">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h4"/></svg></div>
+      <h3>Préparer les devis</h3>
+      <p>Une équipe d'agents relit le besoin, fait le métré, chiffre et rédige le devis au format Sari. Trois validations humaines avant l'envoi.</p>
+      <span class="etat service">En service</span>
+    </div>
+    <div class="carte">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+      <h3>Études électriques</h3>
+      <p>Bilan de puissance, protections, sections de câbles, chute de tension, note de calcul, contrôlés au regard de la NF&nbsp;C&nbsp;15&#8209;100. C'est l'électricien qui signe, jamais l'agent.</p>
+      <span class="etat essai">En essai sur affaires réelles</span>
+    </div>
+    <div class="carte">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h4v6H7zM15 9h2M15 12h2M15 15h2"/></svg></div>
+      <h3>Schémas électriques</h3>
+      <p>L'agent conçoit le schéma à partir de l'étude, et notre logiciel de CAO électrique le dessine au format de l'entreprise, prêt à être relu et corrigé.</p>
+      <span class="etat essai">En essai sur affaires réelles</span>
+    </div>
+    <div class="carte">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg></div>
+      <h3>Contrôle avant envoi</h3>
+      <p>Une escouade de relecteurs passe chaque document au crible : mise en forme, cohérence des calculs, oublis. Chaque remarque est contre-vérifiée avant de nous être montrée.</p>
+      <span class="etat service">En service</span>
+    </div>
+    <div class="carte">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <h3>Applications métier</h3>
+      <p>Suivi des affaires, planning, cartographie de terrain, courrier rangé par affaire : des outils sur mesure, développés avec l'IA en quelques jours plutôt qu'en quelques mois.</p>
+      <span class="etat service">En service</span>
+    </div>
+    <div class="carte">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg></div>
+      <h3>Comptes rendus et classement</h3>
+      <p>Rapports d'intervention rédigés à partir des notes du technicien, documents et mails rangés dans le bon dossier d'affaire, recherche dans les archives techniques.</p>
+      <span class="etat service">En service</span>
+    </div>
+    <div class="carte large">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h11v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/><path d="M11 8h3M11 12h3"/></svg></div>
+      <div>
+        <h3>Une mémoire pour chaque client et chaque affaire</h3>
+        <p>Contacts, installations, réglages relevés en service, décisions prises, ce qui reste à faire : tout est consigné dans le dossier du client, au fil des interventions. Le technicien qui passe le mois prochain, ou l'agent qui prépare le devis, repart de là : on ne vous redemande pas ce que vous nous avez déjà dit. Ce sont de simples fichiers texte, lisibles par n'importe qui : si l'outil change demain, rien n'est perdu.</p>
+        <span class="etat service">En service</span>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="l">
+  <h2>Voir la machine avant de la construire</h2>
+  <p class="intro">Pour présenter un projet, nos agents préparent des visuels que le client regarde et manipule lui-même : la machine en 3D, et ses écrans de conduite comme s'ils étaient déjà en service. On se met d'accord avant de fabriquer et de programmer, au moment où une modification ne coûte presque rien. Voici deux exemples réalisés pour nos études.</p>
+  <figure class="exemple">
+    <div class="cadre16" id="cadre3d">
+      <button class="lancer" id="lancer3d" type="button"><span class="rond">▶</span><b>Lancer la visite 3D</b><small>Poste de dosage de poudre · film commenté et vues libres · 1 Mo</small></button>
+    </div>
+    <figcaption><b>Visite 3D d'une étude : poste de dosage de poudre sur plateaux d'étuve.</b> Le cycle complet se déroule comme un film commenté ; on peut l'arrêter, changer de vue, masquer l'enceinte, tourner autour de la machine. Le même modèle sert aux images et à la vidéo de présentation.
+      <br><span class="etat service">Déjà utilisé pour nos études</span> <a class="plein" href="exemples/poste-dosage-3d.html" target="_blank" rel="noopener">Ouvrir en plein écran ↗</a></figcaption>
+  </figure>
+  <figure class="exemple">
+    <div class="cadre16 ihm16">
+      <iframe src="exemples/ecran-refroidissement.html" loading="lazy" title="Maquette d'écrans de conduite : circulation de refroidissement"></iframe>
+    </div>
+    <figcaption><b>Maquette d'écrans de conduite : armoire de circulation de refroidissement</b> (écran Siemens MTP1000). Synoptique, circuits, réglages, alarmes, maintenance : tout se parcourt comme sur la vraie machine. Le client l'essaie sur son PC ou sa tablette, et on corrige les libellés et l'enchaînement avec ceux qui la conduiront, avant la programmation.
+      <br><span class="etat service">Déjà utilisé pour nos études</span> <a class="plein" href="exemples/ecran-refroidissement.html" target="_blank" rel="noopener">Ouvrir en plein écran ↗</a></figcaption>
+  </figure>
+</div></section>
+
+<section><div class="l">
+  <h2>Et chez vous ?</h2>
+  <p class="intro">Une tâche qui revient chaque semaine et mange du temps à vos équipes : c'est souvent un bon point de départ. On avance par petites étapes.</p>
+  <div class="etapes">
+    <div class="etape"><p><b>On repère la tâche.</b> Un échange pour identifier ce qui prend du temps sans demander de savoir-faire : saisie, mise en forme, recherche, relances.</p></div>
+    <div class="etape"><p><b>On fait un essai.</b> Un prototype rapide, sur vos vrais documents, avec la personne qui fait la tâche aujourd'hui.</p></div>
+    <div class="etape"><p><b>On mesure.</b> Temps gagné, erreurs évitées. Si le gain n'est pas là, on s'arrête. S'il y est, on l'installe pour de bon.</p></div>
+  </div>
+</div></section>
+
+<section><div class="l">
+  <h2>Former vos équipes à l'IA</h2>
+  <p class="intro">Une formation applicative : on part des tâches de vos équipes et on les fait avec l'IA, en séance, sur des cas réels. Chacun repart avec un document de travail qu'il garde sous la main.</p>
+  <div class="cartes">
+    <div class="carte">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
+      <h3>Partir de vos tâches</h3>
+      <p>Avant la formation, on recense avec vous ce qui revient chaque semaine : rédiger, résumer, chercher dans des documents, préparer un devis ou un compte rendu. La formation se construit là-dessus, pas sur des exemples génériques.</p>
+    </div>
+    <div class="carte">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="m9 9 2 2 4-4"/></svg></div>
+      <h3>Pratiquer, pas regarder</h3>
+      <p>Chacun travaille sur son poste, sur ses propres cas : bien formuler une demande, vérifier une réponse, savoir quand ne pas se fier à l'IA. On sort de la séance en sachant faire, pas seulement en ayant vu faire.</p>
+    </div>
+    <div class="carte">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg></div>
+      <h3>Un document de travail à garder</h3>
+      <p>Pas-à-pas, exemples de demandes qui marchent, points de vigilance (confidentialité, vérification des résultats) : un support fait pour servir le lundi suivant, pas pour dormir dans un tiroir.</p>
+    </div>
+  </div>
+  <div class="cta"><a class="btn ligne" href="mailto:cviel@sari-concept.fr?subject=Formation%20IA%20pour%20mon%20%C3%A9quipe">Parler d'une formation</a></div>
+</div></section>
+
+<section><div class="l">
+  <h2>Notre règle</h2>
+  <div class="regle">
+    <p><b>L'IA est un outil, pas une baguette magique.</b> L'industrie a besoin de mains, de têtes et d'expérience terrain. Nos agents préparent, vérifient, rangent ; la décision et la signature restent à quelqu'un du métier.</p>
+    <p>On choisit avec vous ce que chaque agent a le droit de lire et de faire, et rien n'est envoyé à un client sans avoir été relu.</p>
+  </div>
+</div></section>
+
+<section><div class="l">
+  <div class="contact">
+    <div class="qui"><b>Christophe VIEL</b><span>Automaticien, concepteur d'agents IA · Sari-Concept, agence de l'Orne</span></div>
+    <div class="cta" style="margin-top:0">
+      <a class="btn or" href="mailto:cviel@sari-concept.fr?subject=Agents%20IA%20%3A%20j%27aimerais%20en%20savoir%20plus">Écrire</a>
+      <a class="btn ligne" href="tel:+33677078120">Appeler</a>
+      <a class="btn ligne" href="https://www.sari-concept.fr/nous-trouver.html">Nous trouver</a>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="l">
+  <p>Sari-Concept · Automatisme, électricité industrielle, robotique, mécanique, vision · <a href="https://www.sari-concept.fr/">www.sari-concept.fr</a></p>
+  <p>Claude est un modèle d'IA développé par Anthropic. Sari-Concept l'utilise pour construire ses agents ; Sari-Concept n'est pas affilié à Anthropic.</p>
+</div></footer>
+
+<script>
+document.getElementById("lancer3d").onclick=function(){
+  var c=document.getElementById("cadre3d"), f=document.createElement("iframe");
+  f.src="exemples/poste-dosage-3d.html"; f.title="Visite 3D : poste de dosage de poudre"; f.allow="fullscreen";
+  c.innerHTML=""; c.appendChild(f);
+};
+</script>
+</body>
+</html>
